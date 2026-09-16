@@ -1,0 +1,2143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portofolio Guru | Anik Juwarningsih</title>
+
+    <meta name="description"
+          content="Portofolio Guru Anik Juwarningsih, Guru TK PKK KARANGSONO 3, Ngawi">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <style>
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #285943;
+            background: #fffdf5;
+            line-height: 1.7;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+
+        /* =====================================================
+           VARIABLES
+        ===================================================== */
+
+        :root {
+            --green: #238b63;
+            --dark-green: #176548;
+            --light-green: #e9f6df;
+            --mint: #e3f4ed;
+
+            --cream: #fff9e8;
+            --yellow: #ffd86b;
+            --orange: #f5b84b;
+
+            --purple: #e9ddfa;
+            --blue: #dff2f6;
+            --pink: #fbe2e9;
+
+            --white: #ffffff;
+            --text: #315b48;
+            --muted: #6d8277;
+
+            --shadow:
+                0 10px 30px rgba(47, 104, 75, 0.10);
+
+            --radius: 24px;
+        }
+
+
+        /* =====================================================
+           GLOBAL
+        ===================================================== */
+
+        .container {
+            width: min(1150px, 92%);
+            margin: auto;
+        }
+
+        section {
+            padding: 90px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title span {
+            display: inline-block;
+            color: var(--green);
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .section-title h2 {
+            font-family: 'Baloo 2', cursive;
+            font-size: 42px;
+            line-height: 1.2;
+            color: var(--dark-green);
+        }
+
+        .section-title p {
+            max-width: 650px;
+            margin: 12px auto 0;
+            color: var(--muted);
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+
+            padding: 13px 24px;
+
+            border-radius: 50px;
+
+            background: var(--green);
+            color: white;
+
+            font-weight: 600;
+
+            transition: .3s;
+        }
+
+        .btn:hover {
+            background: var(--dark-green);
+            transform: translateY(-3px);
+        }
+
+        .btn-light {
+            background: white;
+            color: var(--green);
+            box-shadow: var(--shadow);
+        }
+
+        .btn-light:hover {
+            background: var(--light-green);
+        }
+
+
+        /* =====================================================
+           NAVBAR
+        ===================================================== */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            background: rgba(255,255,255,.94);
+            backdrop-filter: blur(15px);
+
+            border-bottom: 1px solid #edf0e7;
+        }
+
+        .navbar {
+            height: 76px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+
+            border-radius: 50%;
+
+            display: grid;
+            place-items: center;
+
+            background: var(--light-green);
+
+            font-size: 25px;
+        }
+
+        .logo-text strong {
+            display: block;
+            color: var(--dark-green);
+            font-size: 15px;
+        }
+
+        .logo-text small {
+            color: var(--muted);
+            font-size: 11px;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .nav-menu a {
+            font-size: 13px;
+            font-weight: 500;
+            color: #426755;
+
+            transition: .3s;
+        }
+
+        .nav-menu a:hover {
+            color: var(--green);
+        }
+
+        .menu-toggle {
+            display: none;
+
+            border: 0;
+            background: transparent;
+
+            font-size: 28px;
+            cursor: pointer;
+
+            color: var(--green);
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .hero {
+            position: relative;
+            overflow: hidden;
+
+            min-height: 650px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #fffbed 0%,
+                    #eef8e9 100%
+                );
+
+            padding: 80px 0 60px;
+        }
+
+        .hero::before {
+            content: "";
+
+            position: absolute;
+
+            width: 250px;
+            height: 250px;
+
+            border-radius: 50%;
+
+            background: #d9efdc;
+
+            top: -100px;
+            left: -80px;
+
+            opacity: .7;
+        }
+
+        .hero::after {
+            content: "";
+
+            position: absolute;
+
+            width: 200px;
+            height: 200px;
+
+            border-radius: 50%;
+
+            background: #fff0b5;
+
+            right: -70px;
+            bottom: -70px;
+
+            opacity: .6;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            align-items: center;
+
+            gap: 50px;
+        }
+
+        .hero-text .hello {
+            color: var(--green);
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .hero-text h1 {
+            font-family: 'Baloo 2', cursive;
+
+            font-size: clamp(48px, 6vw, 76px);
+
+            line-height: 1;
+
+            color: var(--dark-green);
+
+            margin-bottom: 12px;
+        }
+
+        .hero-text h2 {
+            font-size: 27px;
+            color: #36775a;
+            margin-bottom: 20px;
+        }
+
+        .hero-info {
+            display: grid;
+            gap: 8px;
+
+            margin-bottom: 25px;
+        }
+
+        .hero-info div {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            color: #527163;
+
+            font-size: 14px;
+        }
+
+        .hero-info strong {
+            color: var(--dark-green);
+            min-width: 110px;
+        }
+
+        .hero-description {
+            max-width: 530px;
+
+            color: var(--muted);
+
+            margin-bottom: 28px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+
+        /* =====================================================
+           HERO PHOTO
+        ===================================================== */
+
+        .hero-photo {
+            position: relative;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .photo-circle {
+            width: 390px;
+            height: 390px;
+
+            border-radius: 50%;
+
+            background: linear-gradient(
+                135deg,
+                #ccebd8,
+                #f9edb7
+            );
+
+            position: relative;
+
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+
+            overflow: hidden;
+
+            box-shadow: 0 25px 60px rgba(44, 104, 71, .15);
+        }
+
+        .photo-circle img {
+            width: 88%;
+            height: 88%;
+
+            object-fit: contain;
+
+            object-position: bottom center;
+        }
+
+        .sun {
+            position: absolute;
+
+            top: 25px;
+            right: 35px;
+
+            width: 70px;
+            height: 70px;
+
+            border-radius: 50%;
+
+            background: var(--yellow);
+
+            display: grid;
+            place-items: center;
+
+            font-size: 35px;
+        }
+
+        .cloud {
+            position: absolute;
+
+            font-size: 45px;
+
+            color: white;
+        }
+
+        .cloud.one {
+            left: 15px;
+            top: 90px;
+        }
+
+        .cloud.two {
+            right: 20px;
+            top: 150px;
+        }
+
+
+        /* =====================================================
+           QUICK MENU
+        ===================================================== */
+
+        .quick-menu {
+            margin-top: -20px;
+
+            position: relative;
+            z-index: 10;
+        }
+
+        .quick-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(6, 1fr);
+
+            gap: 15px;
+        }
+
+        .quick-card {
+            padding: 22px 12px;
+
+            background: white;
+
+            border-radius: 20px;
+
+            text-align: center;
+
+            box-shadow: var(--shadow);
+
+            transition: .3s;
+
+            border: 1px solid #edf1e8;
+        }
+
+        .quick-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .quick-icon {
+            width: 54px;
+            height: 54px;
+
+            margin: auto auto 10px;
+
+            border-radius: 17px;
+
+            display: grid;
+            place-items: center;
+
+            font-size: 25px;
+        }
+
+        .quick-card:nth-child(1) .quick-icon {
+            background: var(--light-green);
+        }
+
+        .quick-card:nth-child(2) .quick-icon {
+            background: #fff1cc;
+        }
+
+        .quick-card:nth-child(3) .quick-icon {
+            background: var(--purple);
+        }
+
+        .quick-card:nth-child(4) .quick-icon {
+            background: #fff0c7;
+        }
+
+        .quick-card:nth-child(5) .quick-icon {
+            background: var(--blue);
+        }
+
+        .quick-card:nth-child(6) .quick-icon {
+            background: var(--pink);
+        }
+
+        .quick-card h3 {
+            font-family: 'Baloo 2', cursive;
+            font-size: 17px;
+            color: var(--dark-green);
+        }
+
+        .quick-card p {
+            font-size: 11px;
+            color: var(--muted);
+        }
+
+
+        /* =====================================================
+           PROFIL
+        ===================================================== */
+
+        .profile {
+            background: white;
+        }
+
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+
+            align-items: center;
+        }
+
+        .profile-image {
+            position: relative;
+        }
+
+        .profile-image img {
+            width: 100%;
+            max-width: 480px;
+
+            margin: auto;
+
+            border-radius: 35px;
+
+            box-shadow: var(--shadow);
+        }
+
+        .profile-content h2 {
+            font-family: 'Baloo 2', cursive;
+
+            font-size: 43px;
+
+            color: var(--dark-green);
+
+            margin-bottom: 18px;
+        }
+
+        .profile-content p {
+            color: var(--muted);
+
+            margin-bottom: 16px;
+        }
+
+        .quote {
+            padding: 20px;
+
+            background: var(--light-green);
+
+            border-left: 5px solid var(--green);
+
+            border-radius: 15px;
+
+            margin: 25px 0;
+
+            font-style: italic;
+
+            color: #4a705d;
+        }
+
+
+        /* =====================================================
+           EDUKASI
+        ===================================================== */
+
+        .education {
+            background: #f8fbf1;
+        }
+
+        .card-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+        .education-card {
+            background: white;
+
+            border-radius: var(--radius);
+
+            overflow: hidden;
+
+            box-shadow: var(--shadow);
+
+            transition: .3s;
+        }
+
+        .education-card:hover {
+            transform: translateY(-7px);
+        }
+
+        .card-image {
+            height: 180px;
+
+            display: grid;
+            place-items: center;
+
+            font-size: 70px;
+        }
+
+        .card-image.green {
+            background: #dff1d9;
+        }
+
+        .card-image.yellow {
+            background: #fff0c6;
+        }
+
+        .card-image.blue {
+            background: #dceff5;
+        }
+
+        .card-body {
+            padding: 25px;
+        }
+
+        .card-body h3 {
+            font-family: 'Baloo 2', cursive;
+
+            font-size: 23px;
+
+            color: var(--dark-green);
+
+            margin-bottom: 8px;
+        }
+
+        .card-body p {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+
+        /* =====================================================
+           PENGALAMAN
+        ===================================================== */
+
+        .experience {
+            background: white;
+        }
+
+        .timeline {
+            max-width: 800px;
+
+            margin: auto;
+
+            position: relative;
+        }
+
+        .timeline::before {
+            content: "";
+
+            position: absolute;
+
+            left: 22px;
+            top: 0;
+            bottom: 0;
+
+            width: 3px;
+
+            background: #dcecdf;
+        }
+
+        .timeline-item {
+            position: relative;
+
+            padding-left: 70px;
+
+            margin-bottom: 40px;
+        }
+
+        .timeline-dot {
+            position: absolute;
+
+            left: 8px;
+            top: 3px;
+
+            width: 30px;
+            height: 30px;
+
+            border-radius: 50%;
+
+            background: var(--green);
+
+            border: 7px solid #e1f2e5;
+        }
+
+        .timeline-item h3 {
+            font-family: 'Baloo 2', cursive;
+
+            font-size: 24px;
+
+            color: var(--dark-green);
+        }
+
+        .timeline-item span {
+            display: inline-block;
+
+            padding: 4px 13px;
+
+            border-radius: 30px;
+
+            background: var(--light-green);
+
+            color: var(--green);
+
+            font-size: 12px;
+
+            margin: 5px 0 10px;
+        }
+
+        .timeline-item p {
+            color: var(--muted);
+        }
+
+
+        /* =====================================================
+           PRESTASI
+        ===================================================== */
+
+        .achievement {
+            background: #f8fbf1;
+        }
+
+        .achievement-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+        .achievement-card {
+            background: white;
+
+            padding: 30px;
+
+            border-radius: 25px;
+
+            text-align: center;
+
+            box-shadow: var(--shadow);
+
+            transition: .3s;
+        }
+
+        .achievement-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .achievement-icon {
+            width: 75px;
+            height: 75px;
+
+            border-radius: 50%;
+
+            margin: 0 auto 18px;
+
+            display: grid;
+            place-items: center;
+
+            font-size: 35px;
+
+            background: #fff1c9;
+        }
+
+        .achievement-card h3 {
+            font-family: 'Baloo 2', cursive;
+
+            font-size: 22px;
+
+            color: var(--dark-green);
+
+            margin-bottom: 8px;
+        }
+
+        .achievement-card p {
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+
+        /* =====================================================
+           MEDIA PEMBELAJARAN
+        ===================================================== */
+
+        .media {
+            background: white;
+        }
+
+        .media-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+        .media-card {
+            padding: 30px;
+
+            border-radius: 25px;
+
+            background: #f8fbf1;
+
+            border: 1px solid #e6eee3;
+
+            transition: .3s;
+        }
+
+        .media-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow);
+        }
+
+        .media-card .icon {
+            font-size: 45px;
+
+            margin-bottom: 15px;
+        }
+
+        .media-card h3 {
+            font-family: 'Baloo 2', cursive;
+
+            color: var(--dark-green);
+
+            font-size: 23px;
+        }
+
+        .media-card p {
+            color: var(--muted);
+
+            font-size: 14px;
+
+            margin: 8px 0 20px;
+        }
+
+
+        /* =====================================================
+           KONTAK
+        ===================================================== */
+
+        .contact {
+            background:
+                linear-gradient(
+                    135deg,
+                    #e9f6df,
+                    #fff9df
+                );
+        }
+
+        .contact-box {
+            background: white;
+
+            border-radius: 30px;
+
+            padding: 50px;
+
+            box-shadow: var(--shadow);
+
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 50px;
+        }
+
+        .contact-box h2 {
+            font-family: 'Baloo 2', cursive;
+
+            font-size: 40px;
+
+            color: var(--dark-green);
+
+            margin-bottom: 12px;
+        }
+
+        .contact-box p {
+            color: var(--muted);
+        }
+
+        .contact-info {
+            display: grid;
+
+            gap: 15px;
+
+            margin-top: 25px;
+        }
+
+        .contact-item {
+            display: flex;
+
+            gap: 15px;
+
+            align-items: center;
+        }
+
+        .contact-item .icon {
+            width: 48px;
+            height: 48px;
+
+            border-radius: 15px;
+
+            background: var(--light-green);
+
+            display: grid;
+            place-items: center;
+
+            font-size: 22px;
+        }
+
+        .contact-item strong {
+            display: block;
+            color: var(--dark-green);
+        }
+
+        .contact-item span {
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        .contact-form {
+            display: grid;
+            gap: 15px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+
+            border: 1px solid #dfe9df;
+
+            padding: 14px 17px;
+
+            border-radius: 15px;
+
+            font-family: inherit;
+
+            outline: none;
+
+            transition: .3s;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: var(--green);
+        }
+
+        .contact-form textarea {
+            height: 140px;
+
+            resize: vertical;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+            background: var(--dark-green);
+
+            color: white;
+
+            padding: 30px 0;
+
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 13px;
+            opacity: .9;
+        }
+
+
+        /* =====================================================
+           BACK TO TOP
+        ===================================================== */
+
+        .back-top {
+            position: fixed;
+
+            right: 20px;
+            bottom: 20px;
+
+            width: 50px;
+            height: 50px;
+
+            border-radius: 50%;
+
+            display: grid;
+            place-items: center;
+
+            background: var(--green);
+
+            color: white;
+
+            font-size: 20px;
+
+            box-shadow: var(--shadow);
+
+            z-index: 999;
+
+            transition: .3s;
+        }
+
+        .back-top:hover {
+            background: var(--dark-green);
+            transform: translateY(-4px);
+        }
+
+
+        /* =====================================================
+           RESPONSIVE TABLET
+        ===================================================== */
+
+        @media (max-width: 900px) {
+
+            .nav-menu {
+                position: absolute;
+
+                top: 76px;
+                left: 0;
+
+                width: 100%;
+
+                background: white;
+
+                padding: 20px;
+
+                display: none;
+
+                flex-direction: column;
+
+                box-shadow: var(--shadow);
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+
+                text-align: center;
+            }
+
+            .hero-info {
+                justify-content: center;
+            }
+
+            .hero-info div {
+                justify-content: center;
+            }
+
+            .hero-description {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .quick-grid {
+                grid-template-columns:
+                    repeat(3, 1fr);
+            }
+
+            .profile-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .card-grid,
+            .achievement-grid,
+            .media-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .contact-box {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+        /* =====================================================
+           RESPONSIVE MOBILE
+        ===================================================== */
+
+        @media (max-width: 600px) {
+
+            section {
+                padding: 65px 0;
+            }
+
+            .hero {
+                padding: 60px 0 45px;
+            }
+
+            .hero-text h1 {
+                font-size: 48px;
+            }
+
+            .hero-text h2 {
+                font-size: 22px;
+            }
+
+            .photo-circle {
+                width: 290px;
+                height: 290px;
+            }
+
+            .section-title h2 {
+                font-size: 34px;
+            }
+
+            .quick-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .card-grid,
+            .achievement-grid,
+            .media-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-box {
+                padding: 30px 22px;
+            }
+
+            .contact-box h2 {
+                font-size: 34px;
+            }
+
+            .profile-content h2 {
+                font-size: 35px;
+            }
+
+            .hero-info strong {
+                min-width: 95px;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     NAVBAR
+========================================================= -->
+
+<header>
+
+    <div class="container navbar">
+
+        <a href="#beranda" class="logo">
+
+            <div class="logo-icon">
+                🌱
+            </div>
+
+            <div class="logo-text">
+                <strong>Portofolio Guru</strong>
+                <small>Anik Juwarningsih</small>
+            </div>
+
+        </a>
+
+
+        <nav class="nav-menu" id="navMenu">
+
+            <a href="#beranda">Beranda</a>
+            <a href="#profil">Profil</a>
+            <a href="#edukasi">Konten Edukasi</a>
+            <a href="#pengalaman">Pengalaman</a>
+            <a href="#prestasi">Prestasi/Karya</a>
+            <a href="#media">Media Pembelajaran</a>
+            <a href="#kontak">Kontak</a>
+
+        </nav>
+
+
+        <button
+            class="menu-toggle"
+            onclick="toggleMenu()"
+            aria-label="Buka menu">
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================================
+     BERANDA
+========================================================= -->
+
+<section class="hero" id="beranda">
+
+    <div class="container hero-content">
+
+
+        <div class="hero-text">
+
+            <div class="hello">
+                🌿 Halo, Saya
+            </div>
+
+            <h1>
+                Anik<br>
+                Juwarningsih
+            </h1>
+
+            <h2>
+                Guru TK
+            </h2>
+
+
+            <div class="hero-info">
+
+                <div>
+                    📚
+                    <strong>Mata Pelajaran</strong>
+                    <span>TK</span>
+                </div>
+
+                <div>
+                    🏫
+                    <strong>Sekolah</strong>
+                    <span>TK PKK KARANGSONO 3</span>
+                </div>
+
+                <div>
+                    📍
+                    <strong>Kabupaten/Kota</strong>
+                    <span>Ngawi</span>
+                </div>
+
+            </div>
+
+
+            <p class="hero-description">
+
+                Bersama anak-anak, kita belajar, bermain,
+                dan tumbuh menjadi pribadi yang hebat.
+                Setiap langkah kecil adalah bagian dari
+                perjalanan menuju masa depan.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a href="#profil" class="btn">
+                    Tentang Saya →
+                </a>
+
+                <a href="#edukasi" class="btn btn-light">
+                    Konten Edukasi
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="hero-photo">
+
+            <div class="photo-circle">
+
+                <!-- GANTI DENGAN FOTO GURU -->
+                <img
+                    src="foto-guru.jpg"
+                    alt="Foto Anik Juwarningsih">
+
+            </div>
+
+            <div class="sun">
+                ☀️
+            </div>
+
+            <div class="cloud one">
+                ☁️
+            </div>
+
+            <div class="cloud two">
+                ☁️
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     QUICK MENU
+========================================================= -->
+
+<div class="quick-menu">
+
+    <div class="container quick-grid">
+
+
+        <a href="#profil" class="quick-card">
+
+            <div class="quick-icon">
+                👩‍🏫
+            </div>
+
+            <h3>Profil</h3>
+
+            <p>Tentang Saya</p>
+
+        </a>
+
+
+        <a href="#edukasi" class="quick-card">
+
+            <div class="quick-icon">
+                📖
+            </div>
+
+            <h3>Konten Edukasi</h3>
+
+            <p>Materi & Tips</p>
+
+        </a>
+
+
+        <a href="#pengalaman" class="quick-card">
+
+            <div class="quick-icon">
+                💼
+            </div>
+
+            <h3>Pengalaman</h3>
+
+            <p>Riwayat Mengajar</p>
+
+        </a>
+
+
+        <a href="#prestasi" class="quick-card">
+
+            <div class="quick-icon">
+                🏆
+            </div>
+
+            <h3>Prestasi/Karya</h3>
+
+            <p>Penghargaan & Karya</p>
+
+        </a>
+
+
+        <a href="#media" class="quick-card">
+
+            <div class="quick-icon">
+                ▶️
+            </div>
+
+            <h3>Media Pembelajaran</h3>
+
+            <p>Alat & Video</p>
+
+        </a>
+
+
+        <a href="#kontak" class="quick-card">
+
+            <div class="quick-icon">
+                ✉️
+            </div>
+
+            <h3>Kontak</h3>
+
+            <p>Hubungi Saya</p>
+
+        </a>
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================================================
+     PROFIL
+========================================================= -->
+
+<section class="profile" id="profil">
+
+    <div class="container profile-grid">
+
+
+        <div class="profile-image">
+
+            <img
+                src="foto-guru.jpg"
+                alt="Anik Juwarningsih">
+
+        </div>
+
+
+        <div class="profile-content">
+
+            <div class="section-title"
+                 style="text-align:left; margin-bottom:15px;">
+
+                <span>🌱 Tentang Saya</span>
+
+                <h2>
+                    Mendidik dengan Hati
+                </h2>
+
+            </div>
+
+
+            <p>
+                Saya adalah Anik Juwarningsih,
+                seorang guru TK di TK PKK KARANGSONO 3,
+                Kabupaten Ngawi.
+            </p>
+
+            <p>
+                Bagi saya, pendidikan anak usia dini
+                bukan hanya tentang belajar membaca,
+                berhitung, atau menulis.
+            </p>
+
+            <p>
+                Pendidikan juga merupakan proses
+                menumbuhkan karakter, kreativitas,
+                kemandirian, rasa percaya diri,
+                dan kecintaan anak terhadap proses belajar.
+            </p>
+
+
+            <div class="quote">
+
+                “Setiap anak adalah unik.
+                Tugas kita adalah membantu mereka
+                menemukan dan mengembangkan potensinya.”
+
+            </div>
+
+
+            <a href="#kontak" class="btn">
+                Mari Terhubung →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     KONTEN EDUKASI
+========================================================= -->
+
+<section class="education" id="edukasi">
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+            <span>📚 Konten Edukasi</span>
+
+            <h2>
+                Belajar Sambil Bermain
+            </h2>
+
+            <p>
+                Berbagai ide dan materi edukasi
+                untuk mendukung pembelajaran anak usia dini.
+            </p>
+
+        </div>
+
+
+        <div class="card-grid">
+
+
+            <article class="education-card">
+
+                <div class="card-image green">
+                    🔢
+                </div>
+
+                <div class="card-body">
+
+                    <h3>
+                        Mengenal Angka
+                    </h3>
+
+                    <p>
+                        Aktivitas sederhana untuk
+                        membantu anak mengenal angka
+                        melalui permainan.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="education-card">
+
+                <div class="card-image yellow">
+                    🎨
+                </div>
+
+                <div class="card-body">
+
+                    <h3>
+                        Seni & Kreativitas
+                    </h3>
+
+                    <p>
+                        Kegiatan menggambar, mewarnai,
+                        dan membuat karya kreatif
+                        bersama anak.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="education-card">
+
+                <div class="card-image blue">
+                    🌈
+                </div>
+
+                <div class="card-body">
+
+                    <h3>
+                        Mengenal Lingkungan
+                    </h3>
+
+                    <p>
+                        Mengajak anak mengenal
+                        lingkungan sekitar melalui
+                        kegiatan eksplorasi.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PENGALAMAN
+========================================================= -->
+
+<section class="experience" id="pengalaman">
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+            <span>💼 Pengalaman</span>
+
+            <h2>
+                Perjalanan Mengajar
+            </h2>
+
+            <p>
+                Pengalaman dan perjalanan dalam
+                mendampingi tumbuh kembang anak.
+            </p>
+
+        </div>
+
+
+        <div class="timeline">
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <h3>
+                    Guru TK
+                </h3>
+
+                <span>
+                    TK PKK KARANGSONO 3
+                </span>
+
+                <p>
+                    Mendampingi anak-anak dalam
+                    kegiatan pembelajaran,
+                    bermain, berkarya, dan
+                    mengembangkan karakter.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <h3>
+                    Pengembangan Media Pembelajaran
+                </h3>
+
+                <span>
+                    Pembelajaran Kreatif
+                </span>
+
+                <p>
+                    Mengembangkan berbagai aktivitas
+                    dan media pembelajaran yang
+                    menyenangkan bagi anak usia dini.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <h3>
+                    Kegiatan Pendidikan Anak
+                </h3>
+
+                <span>
+                    PAUD / TK
+                </span>
+
+                <p>
+                    Mengikuti dan mengembangkan
+                    kegiatan yang mendukung proses
+                    belajar anak secara aktif dan kreatif.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PRESTASI / KARYA
+========================================================= -->
+
+<section class="achievement" id="prestasi">
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+            <span>🏆 Prestasi & Karya</span>
+
+            <h2>
+                Karya Pendidikan
+            </h2>
+
+            <p>
+                Dokumentasi karya dan aktivitas
+                yang mendukung pembelajaran anak.
+            </p>
+
+        </div>
+
+
+        <div class="achievement-grid">
+
+
+            <div class="achievement-card">
+
+                <div class="achievement-icon">
+                    🏆
+                </div>
+
+                <h3>
+                    Prestasi
+                </h3>
+
+                <p>
+                    Tambahkan informasi prestasi
+                    atau penghargaan yang pernah diraih.
+                </p>
+
+            </div>
+
+
+            <div class="achievement-card">
+
+                <div class="achievement-icon">
+                    🎨
+                </div>
+
+                <h3>
+                    Karya Kreatif
+                </h3>
+
+                <p>
+                    Berbagai karya kreatif
+                    untuk kegiatan pembelajaran TK.
+                </p>
+
+            </div>
+
+
+            <div class="achievement-card">
+
+                <div class="achievement-icon">
+                    📚
+                </div>
+
+                <h3>
+                    Modul Pembelajaran
+                </h3>
+
+                <p>
+                    Materi dan perangkat pembelajaran
+                    yang dapat digunakan dalam kegiatan TK.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     MEDIA PEMBELAJARAN
+========================================================= -->
+
+<section class="media" id="media">
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+            <span>🎬 Media Pembelajaran</span>
+
+            <h2>
+                Belajar dengan Media Menyenangkan
+            </h2>
+
+            <p>
+                Koleksi media pembelajaran yang
+                dapat membantu anak belajar dengan cara yang menyenangkan.
+            </p>
+
+        </div>
+
+
+        <div class="media-grid">
+
+
+            <div class="media-card">
+
+                <div class="icon">
+                    📖
+                </div>
+
+                <h3>
+                    Buku Digital
+                </h3>
+
+                <p>
+                    Materi cerita dan pembelajaran
+                    untuk anak usia dini.
+                </p>
+
+                <a href="#" class="btn">
+                    Lihat Materi
+                </a>
+
+            </div>
+
+
+            <div class="media-card">
+
+                <div class="icon">
+                    🎥
+                </div>
+
+                <h3>
+                    Video Pembelajaran
+                </h3>
+
+                <p>
+                    Video edukasi sederhana
+                    untuk menemani kegiatan belajar.
+                </p>
+
+                <a href="#" class="btn">
+                    Lihat Video
+                </a>
+
+            </div>
+
+
+            <div class="media-card">
+
+                <div class="icon">
+                    🧩
+                </div>
+
+                <h3>
+                    Permainan Edukatif
+                </h3>
+
+                <p>
+                    Permainan yang dirancang
+                    untuk belajar sambil bermain.
+                </p>
+
+                <a href="#" class="btn">
+                    Lihat Media
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     KONTAK
+========================================================= -->
+
+<section class="contact" id="kontak">
+
+    <div class="container">
+
+
+        <div class="contact-box">
+
+
+            <div>
+
+                <h2>
+                    Mari Terhubung 🌱
+                </h2>
+
+                <p>
+                    Silakan hubungi saya untuk
+                    berbagi informasi, karya,
+                    atau kegiatan pendidikan.
+                </p>
+
+
+                <div class="contact-info">
+
+
+                    <div class="contact-item">
+
+                        <div class="icon">
+                            🏫
+                        </div>
+
+                        <div>
+
+                            <strong>Sekolah</strong>
+
+                            <span>
+                                TK PKK KARANGSONO 3
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <div class="icon">
+                            📍
+                        </div>
+
+                        <div>
+
+                            <strong>Lokasi</strong>
+
+                            <span>
+                                Ngawi
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <div class="icon">
+                            👩‍🏫
+                        </div>
+
+                        <div>
+
+                            <strong>Guru</strong>
+
+                            <span>
+                                Anik Juwarningsih
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <form class="contact-form"
+                  onsubmit="kirimPesan(event)">
+
+                <input
+                    type="text"
+                    id="nama"
+                    placeholder="Nama Anda"
+                    required>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Email Anda"
+                    required>
+
+                <textarea
+                    id="pesan"
+                    placeholder="Tulis pesan Anda..."
+                    required></textarea>
+
+                <button
+                    type="submit"
+                    class="btn">
+                    Kirim Pesan →
+                </button>
+
+            </form>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="container">
+
+        <p>
+            © 2026 Anik Juwarningsih.
+            Portofolio Guru TK.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================================================
+     BACK TO TOP
+========================================================= -->
+
+<a href="#beranda"
+   class="back-top"
+   aria-label="Kembali ke atas">
+    ↑
+</a>
+
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+    /* ================================
+       MOBILE MENU
+    ================================= */
+
+    function toggleMenu() {
+
+        const navMenu =
+            document.getElementById("navMenu");
+
+        navMenu.classList.toggle("active");
+
+    }
+
+
+    /* ================================
+       CLOSE MENU AFTER CLICK
+    ================================= */
+
+    document.querySelectorAll(".nav-menu a")
+        .forEach(function(link) {
+
+            link.addEventListener("click", function() {
+
+                document
+                    .getElementById("navMenu")
+                    .classList.remove("active");
+
+            });
+
+        });
+
+
+    /* ================================
+       CONTACT FORM
+    ================================= */
+
+    function kirimPesan(event) {
+
+        event.preventDefault();
+
+        const nama =
+            document.getElementById("nama").value;
+
+        alert(
+            "Terima kasih, " +
+            nama +
+            "! Pesan Anda sudah disiapkan."
+        );
+
+    }
+
+</script>
+
+
+</body>
+</html>
